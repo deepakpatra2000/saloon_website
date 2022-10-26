@@ -1,0 +1,462 @@
+/* TABLE OF CONTENTS */
+/*  GENERAL
+    NAVBAR
+    BANNER
+    ABOUT
+    SERVICES
+    CONTACT
+    FOOTER  */
+
+/*1. GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Background color */
+    --primary-color: #FBB034;
+    --secondary-color: #0e1525;
+    --bg-dark-blue: #091020;
+    --bg-white: #fff;
+    --grey-color: grey;
+    --gradient-color: linear-gradient(-224deg, var(--primary-color) 0, #337DFF 100%);
+    --gradient-text: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, var(--primary-color) 79.69%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--primary-color)', endColorstr='var(--secondary-color)', GradientType=1);
+
+    /* Test Color */
+    --primary-font: 'Poppins', sans-serif;
+    --primary-text: #FD4766;
+    --text-grey: #c6c9d8bf;
+    --text-white: #FFFFFF;
+    ;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--secondary-color);
+    background-image: url("../images/Rectangle\ 1.png");
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 1 Custom CSS */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-dark-blue);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+section {
+
+    padding: 50px 0;
+}
+
+.main-btn {
+    display: inline-block;
+
+    /* border-radius: 50px; */
+    transition: all .4s ease-in-out;
+    padding: 10px 27px;
+    background-color: transparent;
+    /* border: 2px solid var(--grey-color); */
+    color: #000000;
+    /* font-weight: 500; */
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+    text-decoration: none;
+    background-color: var(--primary-color);
+
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 106.5%;
+
+
+  
+/* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.main-btn2 {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid var(--grey-color);
+    /* color: #000000; */
+    /* font-weight: 500; */
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+    text-decoration: none;
+    /* background-color: var(--primary-color); */
+
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 106.5%;
+
+    width: 60px;
+
+    /* identical to box height, or 16px */
+
+    color: #FFFFFF;
+
+
+}
+
+.mt-4 {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* .main-btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-white);
+} */
+
+h1 {
+    /* font-size: 54px; */
+    /* line-height: 68px; */
+    /* font-weight: 800; */
+    color: var(--text-white);
+    margin-bottom: 20px;
+
+    /* font-family: 'Poppins'; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 94.5%;
+
+   
+    
+}
+
+h1 span {
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 1.3px;
+    font-weight: 600;
+    color: var(--text-white);
+    margin-bottom: 15px;
+}
+
+h3 {
+    /* font-size: 20px; */
+    /* font-weight: 600; */
+    color: #9A9A9A;
+    margin-bottom: 19px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 106.5%;
+    width: 389px;
+    height: 66px;
+
+    /* position: absolute;
+width: 389px;
+height: 66px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 106.5%; */
+}
+
+h6 {
+    font-size: 15px;
+    /* text-transform: uppercase; */
+    display: block;
+    letter-spacing: 2px;
+    color: #FBB034;
+    margin-bottom: 20px;
+
+    /* position: absolute; */
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 14px; */
+    /* line-height: 106.5%; */
+    /* width: 155px;
+    height: 17px; */
+
+    /* position: absolute;
+width: 155px;
+height: 17px;
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 106.5%;
+
+/* identical to box height, or 17px */
+
+}
+
+p {
+    color: var(--text-grey);
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.subtitle {
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    background-color: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+input:hover,
+input:focus,
+textarea:focus,
+textarea:hover,
+button {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* 2. Navbar */
+.header_wrapper .navbar {
+    padding: 15px 0;
+    -webkit-transition: all 2s linear;
+    -o-transition: all 2s linear;
+    transition: all 2s linear;
+}
+
+.header_wrapper .navbar-brand img {
+    max-width: 120px;
+    height: auto;
+}
+
+.header_wrapper .navbar-toggler {
+    border: 0;
+    line-height: 2px;
+    color: var(--grey-color);
+}
+
+.header_wrapper .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.header_wrapper .nav-item {
+    margin: 0 10px;
+}
+
+.header_wrapper .nav-item .nav-link {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-grey);
+    display: inline-block;
+}
+
+.header_wrapper .nav-item .nav-link::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: 0.3s;
+    bottom: 0;
+}
+
+.header_wrapper .nav-item .nav-link.active:after,
+.header_wrapper .nav-item .nav-link:hover::after {
+    width: 100%;
+
+}
+
+.header_wrapper .nav-item .nav-link.active,
+.header_wrapper .nav-item .nav-link:hover {
+    color: var(--text-white);
+
+}
+
+/* at the time of navigation , when we write code for js , we will use this  */
+.header-scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-dark-blue);
+    -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.05);
+    box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.05);
+    ;
+}
+
+.header-scrolled .nav-item .nav-link.active,
+.header-scrolled .nav-item .nav-link:hover {
+    color: var(--primary-text);
+
+}
+
+
+/* BANNER */
+
+.banner_wrapper {
+    width: 100%;
+    height: 750px;
+
+    min-height: 650px;
+    background-image: url('../images/image\ 2.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: auto;
+    background-attachment: fixed;
+    padding: 300px 0 200px 0;
+}
+
+/* ABOUT US */
+.about_wrapper {
+    background-image: url("../images/WE\ ARE\ OPEN\ 1\(1\).png");
+    /* opacity: 100; */
+    min-height: 550px;
+}
+
+.appointment_wrapper {
+    background-image: url("../images/Rectangle\ 7.png");
+    height: 500px;
+    padding: 100px 0px 200px 0;
+
+
+
+}
+
+.appointment_wrapper .container img {
+    background-position: right right;
+    margin-left: 50px;
+    /* width: 320px;
+    height: 283px; */
+
+
+}
+
+.appointment_wrapper .container .img-fluid .rounded-3 {
+    width: 25%;
+    position: relative;
+    top: 20px;
+    left: 40px;
+    bottom: -50px;
+
+
+}
+
+.affiliate_wrapper {
+    background-image: url("../images/unsplash_NbtIDoFKGO8.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    
+}
+
+.affiliate_wrapper .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 260px;
+    
+}
+
+.affiliate_wrapper .container h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    /* font-family: 'Poppins'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 94.5%;
+
+}
+
+.affiliate_wrapper .container h6{
+    text-align: center;
+}
+.affiliate_wrapper .container .main-btn2{
+    align-items: center;
+    margin-left: 150px;
+    color: #FBB034;
+}
+.footer{
+    background-color: #000000;
+    width: 100%;
+    min-height: 350px;
+    bottom: 0;
+    color: #fff;
+    padding: 3rem 1rem;
+    font-size: 13px;
+    line-height: 20px;
+
+}
+.footer .container .navbar-brand img{
+    margin-bottom: 200px;
+}
+.footer .container .col p{
+    margin-bottom: 30px;
+    line-height: 15px;
+
+}
+.footer .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ .col{
+    min-width: 250px;
+    color: #fff;
+    font-family: poppins;
+    padding: 0 1rem;
+}
+.col h3{
+    color: #FBB034;
+    margin-bottom: 0px;
+    position: relative;
+    cursor: pointer;
+}
+.col .link a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 5px;
+    position: relative;
+
+}
